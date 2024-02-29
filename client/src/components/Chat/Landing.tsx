@@ -37,15 +37,7 @@ export default function Landing({ Header }: { Header?: ReactNode }) {
           <div className="flex h-full flex-col items-center justify-center">
             <div className="relative mb-3 h-[72px] w-[72px]">
               <div className="gizmo-shadow-stroke relative flex h-full items-center justify-center rounded-full bg-white text-black">
-                {endpoint &&
-                  Icon &&
-                  Icon({
-                    size: 41,
-                    context: 'landing',
-                    className: 'h-2/3 w-2/3',
-                    endpoint: endpoint,
-                    iconURL: iconURL,
-                  })}
+                <img src="/assets/hyprlab_icon.png" alt="HyprLab Logo" />
                 <TooltipTrigger>
                   {(startupConfig?.showBirthdayIcon ?? false) && (
                     <BirthdayIcon className="absolute bottom-12 right-5" />
